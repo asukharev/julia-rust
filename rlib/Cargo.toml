@@ -1,0 +1,16 @@
+[package]
+name = "rlib"
+version = "0.1.0"
+authors = ["Alexander Sukharev <asukharev@users.noreply.github.com>"]
+edition = "2018"
+build="build/build.rs"
+
+[dependencies]
+
+[lib]
+name = "librustdylib"
+crate-type = ["staticlib", "cdylib"]
+
+[build-dependencies]
+
+cbindgen = "0.6.3"
